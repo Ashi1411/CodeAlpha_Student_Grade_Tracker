@@ -101,21 +101,21 @@ public class CodeAlpha_Student_grade_tracker {
 
     public static void main(String[] args) {
         Student students = new Student();
-        students.addStudent("Ashi");
-        students.addGrades("Ashi", 100);
-        students.addGrades("Ashi", 90);
-        students.addGrades("Ashi", 99);
+        students.addStudent("xyz");
+        students.addGrades("xyz", 100);
+        students.addGrades("xyz", 90);
+        students.addGrades("xyz", 99);
         students.addStudent("Abc");
         students.addGrades("Abc", 70);
         students.addGrades("Abc", 0);
         students.addGrades("Abc", 10);
         students.addGrades("Abc", 60);
-        System.out.println(students.average("Ashi"));
+        System.out.println(students.average("xyz"));
         System.out.println(students.average("Abc"));
         System.out.println(students.average("As"));
-        System.out.println(students.highestMarks("Ashi"));
-        System.out.println(students.lowestMarks("Ashi"));
-        students.display("Ashi");
+        System.out.println(students.highestMarks("xyz"));
+        System.out.println(students.lowestMarks("xyz"));
+        students.display("xyz");
         students.displayAll();
     }
 }

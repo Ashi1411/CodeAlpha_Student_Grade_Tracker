@@ -87,7 +87,7 @@ public class CodeAlpha_Student_grade_tracker {
             System.out.println();
         }
 
-        //display all grades of a all student
+        //display all grades of all student
         public void displayAll(){
             System.out.println("******All Student Details******");
             Set<String> keySet = stud.keySet();
@@ -103,6 +103,7 @@ public class CodeAlpha_Student_grade_tracker {
     }
 
     public static void main(String[] args) {
+        //Implementation 
         Student students = new Student();
         students.addStudent("xyz");
         students.addGrades("xyz", 100);

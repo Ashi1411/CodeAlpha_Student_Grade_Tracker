@@ -10,6 +10,7 @@ public class CodeAlpha_Student_grade_tracker {
         public void addStudent(String name){
             if (!stud.containsKey(name)){
                 stud.put(name, new ArrayList<>());
+                System.out.println("Student added");
             }
             else{
                 System.out.println(name + "already exists");
@@ -23,6 +24,7 @@ public class CodeAlpha_Student_grade_tracker {
             }
             else{
                 stud.get(name).add(grade);
+                System.out.println("Grades added");
             }
         }
 
@@ -87,6 +89,7 @@ public class CodeAlpha_Student_grade_tracker {
 
         //display all grades of a all student
         public void displayAll(){
+            System.out.println("******All Student Details******");
             Set<String> keySet = stud.keySet();
             for (String key : keySet){
                 System.out.print(key + " : ");
@@ -110,11 +113,11 @@ public class CodeAlpha_Student_grade_tracker {
         students.addGrades("Abc", 0);
         students.addGrades("Abc", 10);
         students.addGrades("Abc", 60);
-        System.out.println(students.average("xyz"));
-        System.out.println(students.average("Abc"));
-        System.out.println(students.average("As"));
-        System.out.println(students.highestMarks("xyz"));
-        System.out.println(students.lowestMarks("xyz"));
+        System.out.println("Average of marks = " + students.average("xyz"));
+        System.out.println("Average of marks = " + students.average("Abc"));
+        System.out.println("Average of marks = " + students.average("As"));
+        System.out.println("Highest marks= " + students.highestMarks("xyz"));
+        System.out.println("Lowest marks= " + students.lowestMarks("xyz"));
         students.display("xyz");
         students.displayAll();
     }
